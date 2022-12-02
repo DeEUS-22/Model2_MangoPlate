@@ -54,7 +54,7 @@ $(document).ready(function() {
 	
 	function initEatdealList(){
 		//Ajax를 이용한 데이터 가져오기
-		$.ajax({
+				$.ajax({
 			url : "eatdeal_list_json.do?rpage=1",
 			success : function(result){
 				/* alert(result); */

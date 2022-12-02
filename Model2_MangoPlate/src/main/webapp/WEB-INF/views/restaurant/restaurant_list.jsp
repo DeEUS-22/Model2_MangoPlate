@@ -165,9 +165,6 @@ article.more span {
 }
 
 </style>
-<script>
-
-</script>
 </head>
 <body>
 	<!-- header -->

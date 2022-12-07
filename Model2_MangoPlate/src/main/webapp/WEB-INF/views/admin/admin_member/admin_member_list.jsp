@@ -46,10 +46,9 @@
 		}
 		
 		.content {
-		/* 	border: 1px solid red; */
 			width: 100%;
-		/* 	height: auto; */
 			margin-top: 61px;
+			margin-bottom : 300px;
 		}
 	
 	.admin_head {
@@ -85,6 +84,55 @@
 	tr:last-child {
 		border: none;	
 	}
+	
+	table.board_list{
+	 	width:70%; margin:0 auto; 	
+ 		font-size:13px;
+	}
+	
+	table.board_list, table.board_list th, table.board_list td {
+		border:1px solid #ccc;
+ 		border-collapse:collapse;
+	}
+	
+	table.board_list th {
+		background-color:coral;
+		text-align:center;
+		color : white;
+	}
+	
+	table.board_list th, table.board_list td {
+		padding:10px 0;
+	}
+	
+	table.board_list td {
+		text-align:center;
+	}
+	
+	table.board_list tr:first-child td {
+		border:1px solid #fff;
+ 		border-bottom:1px solid #ccc;
+ 		text-align:right; 
+	}
+	
+	table.board_list tr:first-child td button{ 
+ 		background-color:#ccc;
+ 		border-color:#ccc;
+ 		border-radius:5px; 		
+ 	}
+	table.board_list tr:last-child td { 
+ 		border:1px solid #fff;
+ 		border-top:1px solid #ccc;
+ 		padding-top:20px;
+ 	}
+ 	table.board_list  td a { 
+ 		text-decoration:none;
+ 		color:#000;
+ 	}
+ 	table.board_list  td a:hover { 
+ 		text-decoration:underline;
+ 	}
+ 	
 </style>
 </head>
 <body>
@@ -108,7 +156,7 @@
 	</ul>
 		
 		<h2>회원정보-리스트</h2>
-		<table class="board">			
+		<table class="board_list">			
 			<tr>
 				<th>번호</th>
 				<th>아이디</th>
@@ -128,7 +176,7 @@
 			</c:forEach>
 			
 			<tr>
-				<td><div id="ampaginationsm"></div></td>
+				<td colspan="5"><div id="ampaginationsm"></div></td>
 			</tr>
 		</table>	
 	</div>

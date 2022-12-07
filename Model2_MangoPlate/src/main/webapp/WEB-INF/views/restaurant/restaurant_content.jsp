@@ -208,7 +208,7 @@
 		margin-bottom : 20px;
 	}
 	
-	.map_wrap {position:relative;overflow:hidden;width:100%;height:450px;}
+	.map_wrap {position:relative;overflow:hidden;width:100%;height:450px; margin-bottom: 30px;}
 	.radius_border{border:1px solid #919191;border-radius:5px;}     
 	.custom_zoomcontrol {position:absolute;top:50px;right:10px;width:36px;height:80px;overflow:hidden;z-index:1;background-color:#f5f5f5;} 
 	.custom_zoomcontrol span {display:block;width:36px;height:40px;text-align:center;cursor:pointer;}     
@@ -339,9 +339,8 @@
 
 	<section class="top">
 		<div>
-			<!-- <p>181,458 클릭 | 2022-09-26</p> -->
-			<p>${vo.rhits } 클릭 | 2022-09-26</p>
-			<p>${rcategory } 맛집 베스트 35곳</p>
+			<p>최신 업데이트 | 2022-09-26</p>
+			<p>${rcategory } 맛집 베스트 10곳</p>
 			<p>"국내에서 즐기는 ${rcategory }의 맛!"</p>
 		</div>
 	</section>
@@ -402,7 +401,7 @@
 				<script>
 				var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 				    mapOption = { 
-				        center: new kakao.maps.LatLng(37.5252, 127.0389), // 지도의 중심좌표
+				        center: new kakao.maps.LatLng(37.59447, 126.99562), // 지도의 중심좌표
 				        level: 1 // 지도의 확대 레벨
 				    };  
 				
@@ -419,7 +418,7 @@
 				}
 				
 				// 마커가 표시될 위치입니다 
-				var markerPosition  = new kakao.maps.LatLng(37.5252, 127.0389); 
+				var markerPosition  = new kakao.maps.LatLng(37.59447, 126.99562); 
 	
 				// 마커를 생성합니다
 				var marker = new kakao.maps.Marker({
@@ -438,42 +437,42 @@
 			<h2>리스트의 식당과 비슷한 맛집</h2>
 			<div class="similar">
 				<article>
-					<img src="http://localhost:9000/mangoplate/resources/images/test1.jpg" width="192px" height="128px">
+					<img src="http://localhost:9000/mangoplate/resources/images/fishcake.jpg" width="192px" height="128px">
 					<div>
 						<ul>
-							<li>아재식당</li>
-							<li>4.5</li>
-							<li>연남도-인도 음식</li>
+							<li>영심이네김밥</li>
+							<li>3.9</li>
+							<li>분식</li>
 						</ul>
 					</div>
 				</article>
 				<article>
-					<img src="http://localhost:9000/mangoplate/resources/images/test1.jpg" width="192px" height="128px">
+					<img src="http://localhost:9000/mangoplate/resources/images/bori.jpg" width="192px" height="128px">
 					<div>
 						<ul>
-							<li>아재식당</li>
-							<li>4.5</li>
-							<li>연남도-인도 음식</li>
+							<li>선동보리밥</li>
+							<li>4.1</li>
+							<li>한식</li>
 						</ul>
 					</div>
 				</article>
 				<article>
-					<img src="http://localhost:9000/mangoplate/resources/images/test1.jpg" width="192px" height="128px">
+					<img src="http://localhost:9000/mangoplate/resources/images/fishsoup.jpg" width="192px" height="128px">
 					<div>
 						<ul>
-							<li>아재식당</li>
-							<li>4.5</li>
-							<li>연남도-인도 음식</li>
+							<li>동강나루터</li>
+							<li>4.3</li>
+							<li>한식</li>
 						</ul>
 					</div>
 				</article>
 				<article>
-					<img src="http://localhost:9000/mangoplate/resources/images/test1.jpg" width="192px" height="128px">
+					<img src="http://localhost:9000/mangoplate/resources/images/eel.jpg" width="192px" height="128px">
 					<div>
 						<ul>
-							<li>아재식당</li>
-							<li>4.5</li>
-							<li>연남도-인도 음식</li>
+							<li>해목</li>
+							<li>4.6</li>
+							<li>덮밥</li>
 						</ul>
 					</div>
 				</article>

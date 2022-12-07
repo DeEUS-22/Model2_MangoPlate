@@ -137,32 +137,33 @@
 </head>
 <body>
 <!-- header -->
-<!-- <iframe src="header.do" width="100%" height="61px" scrolling="no" frameborder=0 ></iframe> -->
 <jsp:include page="../header.jsp"></jsp:include>
-	<article class="review_content">
-		<section class="real_content">
-			<div class="first_div">
-				<div>
-					<img src="http://localhost:9000/mangoplate/resources/images/profile.jpg">
-					<p>아이디<p>
-					<span>조회수</span>
-				</div>
-				<div>
-					<img src="http://localhost:9000/mangoplate/resources/images/delicious_checked.png">
-					<span>맛있다</span>
-				</div>
+	
+<!-- content -->
+<article class="review_content">
+	<section class="real_content">
+		<div class="first_div">
+			<div>
+				<img src="http://localhost:9000/mangoplate/resources/images/profile.jpg">
+				<p>아이디<p>
 			</div>
 			<div>
+				<p>내용</p>
 			</div>
 			<div>
-				<img src="http://localhost:9000/mangoplate/resources/images/test1.jpg">
-				<img src="http://localhost:9000/mangoplate/resources/images/test1.jpg">
+				<img src="http://localhost:9000/mangoplate/resources/images/delicious_checked.png">
+				<span>맛있다</span>
 			</div>
-			<div>
-				<a href="http://localhost:9000/mangoplate/index.do"><button type="button">홈으로</button></a>
-				<a href="http://localhost:9000/mangoplate/restaurant_detail.do"><button type="button" class="detail_page">상세페이지로</button></a>
-			</div>
-		</section>
-	</article>
+		</div>
+		<div>
+			<img src="http://localhost:9000/mangoplate/resources/images/test1.jpg">
+			<img src="http://localhost:9000/mangoplate/resources/images/test1.jpg">
+		</div>
+		<div>
+			<a href="http://localhost:9000/mangoplate/index.do"><button type="button">홈으로</button></a>
+			<a href="http://localhost:9000/mangoplate/restaurant_detail.do"><button type="button" class="detail_page">상세페이지로</button></a>
+		</div>
+	</section>
+</article>
 </body>
 </html>

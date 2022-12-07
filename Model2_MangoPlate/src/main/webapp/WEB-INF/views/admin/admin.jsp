@@ -6,22 +6,22 @@
 <head>
 <meta charset="UTF-8">
 <title>Mangoplate</title>
-<script src="http://localhost:9000/mangoplate/resources/js/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet"  href="http://localhost:9000/mangoplate/resources/css/mangoplate.css">
 <link rel="stylesheet"  href="http://localhost:9000/mangoplate/resources/css/am-pagination.css">
+<script src="http://localhost:9000/mangoplate/resources/js/jquery-3.6.0.min.js"></script>
 <script src="http://localhost:9000/mangoplate/resources/js/am-pagination.js"></script>
 <style>
 	* {
-			margin: 0px;
-			padding: 0px;
-		}
-		
-		.content {
-		/* 	border: 1px solid red; */
-			width: 100%;
-		/* 	height: auto; */
-			margin-top: 61px;
-		}
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.content {
+	/* 	border: 1px solid red; */
+		width: 100%;
+	/* 	height: auto; */
+		margin-top: 61px;
+	}
 	
 	.admin_head {
 		/* border: 1px solid blue; */

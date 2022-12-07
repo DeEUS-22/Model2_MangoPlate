@@ -59,7 +59,7 @@ public class ReviewController {
 			
 			fileService.fileSave(vo, request); //위코드를 이동한 서비스쪽 메소드 호출
 			
-			mv.setViewName("/restaurant/review_content");
+			mv.setViewName("/restaurant/restaurant_list");
 		}else{
 			mv.setViewName("error_page");
 		}

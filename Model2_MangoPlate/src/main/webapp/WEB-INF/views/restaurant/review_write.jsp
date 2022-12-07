@@ -134,7 +134,7 @@
 	.textLengthWrap {
 	/* 	border : 1px solid black; */
 		position : absolute;
-		top : -20px;
+		top : -30px;
 		left : 605px;
 	}
 	
@@ -202,7 +202,19 @@
 	 	color : #ffffff;
 	 	border : 1px solid #e9e9e9;
 		padding : 14px 31px;
-	/* 	cursor : not-allowed; */
+	}
+	
+	/****
+	*****/
+	
+	.emotion ul li:nth-child(3) {
+		position : absolute;
+		top : 240px;
+		left : -10px;
+	}
+	.emotion ul li:nth-child(3) input {
+		padding: 10px;
+		font-size:12px;
 	}
 	
 </style>
@@ -231,13 +243,11 @@ $(document).ready(function(){
 </head>
 <body>
 <!-- header -->
-<!-- <iframe src="header.do" width="100%" height="61px" scrolling="no" frameborder=0 ></iframe> -->
 <jsp:include page="../header.jsp"></jsp:include>
 
 	<div class="body">
 	<section class="review_top">
 		<div>
-			<!-- <h1>팔레드 신</h1> -->
 			<h1>${vo.rname}<span>에 대한 솔직한 리뷰를 써주세요.</span></h1>
 			
 		</div>
@@ -260,7 +270,6 @@ $(document).ready(function(){
 							<textarea name="vcontent" id="textBox" placeholder="김태형님, 주문하신 메뉴는 어떠셨나요? 식당의 서비스와 분위기도 궁금해요!"></textarea>
 						</li>
 						<li>
-							<label>파일첨부</label>
 							<input type="file" name="file1">
 						</li>
 					</ul>
@@ -273,14 +282,14 @@ $(document).ready(function(){
 		</article>
 		<article class="upload">
 				<ul>
-					<li>
+					<!-- <li>
 						<button type=button></button>
-					</li>
+					</li> -->
 				</ul>
 				<div class="photo_count">
-					<p class="textCount2">0</p>
+					<!-- <p class="textCount2">0</p>
 					<p>/</p>
-				    <p class="textTotal2">30</p>
+				    <p class="textTotal2">30</p> -->
 				</div>
 				<ul>
 					<li>

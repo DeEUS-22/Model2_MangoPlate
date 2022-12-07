@@ -6,8 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>식당 상세페이지</title>
-<link rel="stylesheet"
-	href="http://localhost:9000/mangoplate/resources/css/restaurant_detail.css">
+<link rel="stylesheet" href="http://localhost:9000/mangoplate/resources/css/restaurant_detail.css">
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=69d02d054bc554d77e8ab840092a3b61"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=69d02d054bc554d77e8ab840092a3b61&libraries=services"></script>
 <style>
@@ -30,6 +29,11 @@
 	.custom_zoomcontrol span {display:block;width:36px;height:40px;text-align:center;cursor:pointer;}     
 	.custom_zoomcontrol span img {width:15px;height:15px;padding:12px 0;border:none;}             
 	.custom_zoomcontrol span:first-child{border-bottom:1px solid #bfbfbf;}
+	
+	
+	.NearByRestaurantItem__Info {
+		margin : 5px 0px 0px 0px;
+	}
 </style>
 </head>
 <body>
@@ -74,12 +78,6 @@
 									</div>
 								</div>
 
-								<div class="status
-                branch_none
-                ">
-									<span class="cnt hit">7,612</span> <span class="cnt review">9</span>
-									<span class="cnt favorite">137</span>
-								</div>
 							</header>
 
 
@@ -251,13 +249,7 @@
 											<span class="RestaurantReviewItem__UserNickName">젊어서먹으세</span>
 
 											<ul class="RestaurantReviewItem__UserStat">
-												<li
-													class="RestaurantReviewItem__UserStatItem RestaurantReviewItem__UserStatItem--Review">234</li>
-												<li
-													class="RestaurantReviewItem__UserStatItem RestaurantReviewItem__UserStatItem--Follower">10</li>
 											</ul>
-
-											<i class="RestaurantReviewItem__HolicBadge"></i>
 										</div>
 										<div class="RestaurantReviewItem__ReviewContent">
 											<div class="RestaurantReviewItem__ReviewTextWrap">
@@ -268,7 +260,7 @@
 												<span class="RestaurantReviewItem__ReviewDate">2022-09-10</span>
 											</div>
 
-											<ul class="RestaurantReviewItem__PictureList">
+											<!-- <ul class="RestaurantReviewItem__PictureList">
 												<li class="RestaurantReviewItem__PictureItem">
 													<button class="RestaurantReviewItem__PictureButton"
 														data-index="0">
@@ -304,7 +296,7 @@
 
 													</button>
 												</li>
-											</ul>
+											</ul> -->
 										</div>
 									</a>
 								</li>
@@ -331,7 +323,7 @@
 					<script>
 					var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 					    mapOption = { 
-					        center: new kakao.maps.LatLng(37.5252, 127.0389), // 지도의 중심좌표
+					        center: new kakao.maps.LatLng(37.59447, 126.99562), // 지도의 중심좌표
 					        level: 1 // 지도의 확대 레벨
 					    };  
 					
@@ -348,7 +340,7 @@
 					}
 					
 					// 마커가 표시될 위치입니다 
-					var markerPosition  = new kakao.maps.LatLng(37.5252, 127.0389); 
+					var markerPosition  = new kakao.maps.LatLng(37.59447, 126.99562); 
 		
 					// 마커를 생성합니다
 					var marker = new kakao.maps.Marker({
@@ -385,34 +377,29 @@
 
 											<div class="NearByRestaurantItem__Content">
 												<div class="NearByRestaurantItem__NameWrap">
-													<a class="NearByRestaurantItem__Name"
-														href="/restaurants/s7YK66H3myEH">웰컴투더헬</a> <span
-														class="NearByRestaurantItem__Rating NearByRestaurantItem__Rating--Expected">3.9</span>
+													<a class="NearByRestaurantItem__Name" href="/restaurants/s7YK66H3myEH">웰컴투더헬</a> 
+													<span class="NearByRestaurantItem__Rating NearByRestaurantItem__Rating--Expected">3.9</span>
 												</div>
 
 												<div class="NearByRestaurantItem__MetroAndCuisine">
-													<span class="NearByRestaurantItem__Metro">마포/공덕</span> <span
-														class="NearByRestaurantItem__SubCuisine">칵테일 / 와인</span>
+													<span class="NearByRestaurantItem__Metro">마포/공덕</span> 
+													<span class="NearByRestaurantItem__SubCuisine">칵테일 / 와인</span>
 												</div>
 
 												<div class="NearByRestaurantItem__InfoWrap">
 													<dl class="NearByRestaurantItem__Info">
 														<dt class="NearByRestaurantItem__InfoLabel">음식 종류</dt>
-														<dd
-															class="NearByRestaurantItem__InfoValue NearByRestaurantItem__InfoValue--SubCuisine">칵테일
-															/ 와인</dd>
+														<dd class="NearByRestaurantItem__InfoValue NearByRestaurantItem__InfoValue--SubCuisine">칵테일 / 와인</dd>
 													</dl>
 
 													<dl class="NearByRestaurantItem__Info">
 														<dt class="NearByRestaurantItem__InfoLabel">위치</dt>
-														<dd
-															class="NearByRestaurantItem__InfoValue NearByRestaurantItem__InfoValue--Metro">마포/공덕</dd>
+														<dd class="NearByRestaurantItem__InfoValue NearByRestaurantItem__InfoValue--Metro">마포/공덕</dd>
 													</dl>
 
 													<dl class="NearByRestaurantItem__Info">
 														<dt class="NearByRestaurantItem__InfoLabel">가격대</dt>
-														<dd
-															class="NearByRestaurantItem__InfoValue NearByRestaurantItem__InfoValue--PriceRange">2만원-3만원</dd>
+														<dd class="NearByRestaurantItem__InfoValue NearByRestaurantItem__InfoValue--PriceRange">2만원-3만원</dd>
 													</dl>
 												</div>
 											</div>
@@ -422,26 +409,23 @@
 							</section>
 
 
-							<div class="ad_area tag only-mobile"
+							<!-- <div class="ad_area tag only-mobile"
 								id="web_mobile-restaurant-tag">
 								<div class="ad_wrap">
 									<div class="content" id="web_mobile-restaurant-tag-content"></div>
 								</div>
-							</div>
+							</div> -->
 
 						</div>
 
-						<div class="ad_area right_map only-desktop"
-							id="web_desktop-restaurant-right_map">
+						<!-- <div class="ad_area right_map only-desktop" id="web_desktop-restaurant-right_map">
 							<div class="ad_wrap" style="">
-								<div class="content"
-									id="web_desktop-restaurant-right_map-content">
-									<div
-										id="google_ads_iframe_/395211568/production/desktop-web.restaurant.right-side_0__container__"
+								<div class="content" id="web_desktop-restaurant-right_map-content">
+									<div id="google_ads_iframe_/395211568/production/desktop-web.restaurant.right-side_0__container__"
 										style="border: 0pt none; width: 336px; height: 0px;"></div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 					</div>
 				</div>
